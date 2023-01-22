@@ -1,1 +1,1 @@
-$(".nav-link").css({"color": "#00652E", "text-align": "center"});
+$(".nav-link").css({"color": "#082C34", "text-align": "center"});
