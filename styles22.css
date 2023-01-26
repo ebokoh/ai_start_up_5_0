@@ -31,7 +31,7 @@ body {
 
 /* Headings */
 .big-heading {
-    font-size: 3.0rem;
+    font-size: 3.7rem;
     font-weight: 900;
     line-height: 1.5;
     justify-content: center;
@@ -246,39 +246,29 @@ h1, h2, h3, h4, h5, h6 {
         top: 50%;
     }
 
-    /* .personal-section .container-fluid {
-        display: table;
-    } */
-
-    .flex-wrapper .personal-section .container {
+    .personal-section .container {
         display: table;
     }
 
-    .flex-wrapper .personal-container .box {
-        /* width: 100%; */
-        /* align-items: center; */
-        justify-content: center;
-        margin: auto;
+    .box {
+        width: 100%;
+        align-items: center;
         /* margin-bottom: 30px; */
     }
 
-    .flex-wrapper .personal-container .personal-content {
-        /* width: 100%; */
-        margin: auto;
-        justify-content: center;
+    .personal-content {
+        width: 100%;
+        margin: 0;
         margin-top: 20px;
-        padding: 0 15px 0 0;
     }
 
-    /* .personal-footer .container-fluid {
-        display: block;
-    } */
-
+    
 
     /* .column {
         width: 100%;
         display: block;
     }
+
     .container .card .content .team-img-box {
         position: static;
         margin-top: 50%;
@@ -296,11 +286,9 @@ h1, h2, h3, h4, h5, h6 {
 .cta {
     background-color: #082C34;
     /* margin: auto; */
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 ;
     text-align: center;
-    display: block;
-    width: 100%;
+    width: 100vw;
 }
 
 .copy-right {
@@ -344,6 +332,7 @@ h1, h2, h3, h4, h5, h6 {
     right: auto;
     left: 20px;
  }
+
  .carousel-control-next {
     left: auto;
     right: 20px;
@@ -431,18 +420,18 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
+.team-section .container {
     display: flex;
-    /* justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
-}
-
-.team-container {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* .team-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
 
 .container .card {
     width: 330px; /*330*/
@@ -528,7 +517,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-section {
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 }
 
 /* ################## products ###############################*/
@@ -557,29 +546,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ################ Footer ##################################### */
 
-/* footer{
-    margin-top: 4.5rem;
-} */
+footer{
+    margin-top: auto;
+}
 
 /* ############# Personal Profile ################################### */
 
-.personal-container {
+.personal-section .container {
+    display: flex;
     width: 100%;
     height: 100%;
     padding: 20px 20px;
-    margin-bottom: 150px;
 }
 
 .personal-content {
     margin-left: 20px;
-    flex: 50%;
+    flex: 50%;   /* 450%;*/
     display: table;
     padding: 30px 30px;
     font-size: 20px;
     background-color: #417885;
     border-radius: 20px;
     color: aliceblue;
-    justify-content: center;
 }
 
 .personal-content h1 {
@@ -590,20 +578,21 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.personal-content li {
+.personal-content ul li {
      list-style: none;
 }
 
 .personal-content ul {
+    margin-top: 20px;
     text-align: left;
 }
 
-.personal-content ul {
+.personal-content p {
     text-align: justify;
 }
 
 .box {
-    flex: 30%;
+    flex: 30%;  /* 150%; */
     display: table;
     align-items: center;
     text-align: center;
@@ -614,19 +603,15 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     /* background-size: cover;
     background-position: center center; */
-    justify-content: center;
     /* overflow: hidden; */
 }
 
 .box img {
     border-radius: 50%;
     border: 2px solid #FFF;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    /* height: 250px; */
-    /* width: 250px; */
-    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    /* overflow: hidden; */
 }
 
 .box ul {
@@ -644,40 +629,10 @@ h1, h2, h3, h4, h5, h6 {
 .box ul li i {
     cursor: pointer;
     margin: 10px;
-    margin-left: 0;
+    /* margin-left: 0; */
     font-size: 30px;
 }
 
 .box ul li i:hover {
 opacity: 0.6;
 }
-
-.personal-footer .container {
-    justify-content: center;
-}
-
-/* .personal-footer .social-icon {
-    padding: 60px 10px 20px;
-    align-items: center;
-} */
-
-.personal-footer .container .copy-right {
-    color: #fff;
-    justify-content: center;
-    /* background-color: #082C34; */
-}
-
-.flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.personal-section {
-    flex-grow: 1;
-}
-
-/* .flex-wrapper .personal-section .container {
-    display: flex;
-} */

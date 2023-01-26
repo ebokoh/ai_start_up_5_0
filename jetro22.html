@@ -14,6 +14,123 @@
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/d54c08f041.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: aliceblue;
+        align-items: center;
+        justify-content: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+    }
+
+    .personal-content {
+        margin-left: 20px;
+        flex: 50%;
+        /* 450%;*/
+        display: table;
+        padding: 30px 30px;
+        font-size: 20px;
+        background-color: #417885;
+        border-radius: 20px;
+        color: aliceblue;
+    }
+
+    .personal-content h1 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .personal-content ul li {
+        list-style: none;
+    }
+
+    .personal-content ul {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .personal-content p {
+        text-align: justify;
+    }
+
+    .box {
+        flex: 30%;
+        /* 150%; */
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        background-color: #f2f3f7;
+        color: #6c758f;
+        padding: 30px 30px;
+        border-radius: 20px;
+        /* background-size: cover;
+    background-position: center center; */
+        /* overflow: hidden; */
+    }
+
+    .box img {
+        border-radius: 50%;
+        border: 2px solid #FFF;
+        height: 250px;
+        width: 250px;
+        /* overflow: hidden; */
+    }
+
+    .box ul {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .box ul li {
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 100;
+    }
+
+    .box ul li i {
+        cursor: pointer;
+        margin: 10px;
+        /* margin-left: 0; */
+        font-size: 30px;
+    }
+
+    .box ul li i:hover {
+        opacity: 0.6;
+    }
+
+    @media (max-width: 990px) {
+        .container {
+            display: table;
+        }
+
+        .box {
+            width: 100%;
+        }
+
+        .personal-content {
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+</style>
 <body>
 
     <section class="noncolored-section title">
@@ -64,20 +181,18 @@
     <br>
 
     <!-- Personal Profile -->
-    <div class="flex-wrapper">
     <section class="personal-section">
-        <!-- <div class="personal"> -->
-        <div class="container personal-container">
+        <!-- <div class="container-fluid"> -->
+        <div class="container">
             <div class="box">
-                <img src="images/jetro.jpg" alt="Jetro">
+                <img src="images/jetro.jpg" alt="Jane" style="width:100%">
                     <ul>
                         <li>Jetro Pocorni</li>
                         <li>Senior Lecturer (LNU)</li>
                         <li>Director (PALM)</li>
                     <li><i class="fa-brands fa-facebook fa-lg"></i>
                         <i class="fa-brands fa-twitter fa-lg"></i>
-                        <!-- <i class="fa-brands fa-instagram fa-lg"></i> -->
-                        <i class="fa-brands fa-linkedin fa-lg"></i></li>
+                        <i class="fa-brands fa-instagram fa-lg"></i></li>
                     </ul>
                     <div class="team-sci" id="team-sci">
 
@@ -91,10 +206,6 @@
                 <ul>
                     <h3>Work</h3>
                     <li>Lecturer</li>
-                </ul>
-                <ul>
-                    <h3>Gender</h3>
-                    <li>Male</li>
                 </ul>
                 <ul>
                     <h3>Country</h3>
@@ -125,7 +236,7 @@
             
             
         </div>
-    
+        <!-- </div> -->
     </section>
     
 
@@ -141,25 +252,19 @@
                 Download</button>
         </div>
     </section>
-    
 
     <!-- Footer -->
 
-    <!-- <footer class="white- section personal-footer footer" id="home-footer">   -->
-    <!-- <footer class="personal-footer"> -->
-    <footer class="white-section footer personal-footer" id="home-footer">
-        <div class="container">
+    <footer class="white-section footer" id="home-footer">            
+        <div class="container-fluid">
         <i class="social-icon fa-brands fa-facebook fa-xl"></i>
         <i class="social-icon fa-brands fa-twitter fa-xl"></i>
-        <!-- <i class="social-icon fa-brands fa-instagram fa-xl"></i> -->
-        <i class="social-icon fa-brands fa-linkedin fa-xl"></i>
+        <i class="social-icon fa-brands fa-instagram fa-xl"></i>
         <i class="social-icon fa-solid fa-envelope fa-xl"></i>
 
-        <!-- <p class="copy-right">© Copyright PALM</p> -->
+        <p class="copy-right">© Copyright PALM</p>
         </div>
     </footer>
-    <p class="copy-right">© Copyright PALM</p>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="index.js"></script>
