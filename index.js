@@ -1,0 +1,1 @@
+$(".nav-link").css({"color": "#082C34", "text-align": "center"});

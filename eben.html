@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>About Us</title>
+
+    <!--Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/d54c08f041.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: aliceblue; */
+        align-items: center;
+        justify-content: center;
+        min-width: 100% !important;
+        position: absolute;
+    }
+
+    html {
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+
+        /* ######################## */
+
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .profile-heading {
+        color: #082C34;
+    }
+
+    /* ########################## card config ############################# */
+
+    /* .box {
+        flex: 30%;
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        background-color: #f2f3f7;
+        color: #6c758f;
+        padding: 30px 30px;
+        border-radius: 20px;
+      
+    }
+
+    .box img {
+        border-radius: 50%;
+        border: 2px solid #FFF;
+        width: 180px;
+        height: 180px;
+    } */
+
+    /* #card2 {
+        margin-left: 2px;
+        flex: 50%;
+        display: flex;
+        padding: 30px 30px;
+        font-size: 15px !important;
+        background-color: #417885;
+        border-radius: 20px;
+        color: aliceblue;
+        justify-content: center;
+        width: 100%;
+        text-align: left !important;
+    } */
+
+    .card ul {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .card ul li {
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 50;
+    }
+
+    .card ul li i {
+        cursor: pointer;
+        margin: 10px;
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    /* .card ul li i:hover {
+    opacity: 0.6;
+    }  */
+
+    .container .card {
+        top: 0;
+        flex: 30%;
+        width: 330px; /*330*/
+        height: 450px; /*416*/
+        padding: 30px 30px;
+        margin: 20px;
+        /* background: #f2f3f7; */
+        box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+                    -0.5em -0.5em 1em #ffffff;
+        border-radius: 20px;
+        align-items: center;
+        display: table;
+
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        /* background-color: #f2f3f7; */
+        color: #6c758f;
+        /* padding: 30px 30px; */
+        /* border-radius: 20px; */
+    }
+
+    .card .content .team-content-box {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-right: 20px !important;
+        /* flex-direction: column; */
+    }
+
+    .card .content .team-img-box {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .card .content .team-img-box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 200px;
+        /* object-fit: cover !important;
+        object-position: -20% 0 !important; */
+    }
+
+    .card .content .team-content-box h4 {
+        color: #082C34;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .card .content .team-content-box h5 {
+        color: #6c758f;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* .container .card .content .team-sci a {
+        text-decoration: none;
+        color: #6c758f; */
+        /* font-size: 20px; */
+        /* margin: 10px; */
+        /* transition: color 0.4s;
+    } */
+
+    #team-sci {
+        /* position: absolute; */
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    #team-sci a {
+        text-decoration: none;
+        padding: 20px 10px;
+        color: #082C34;
+        transition: color 0.4s;
+    }
+
+    #team-sci a:hover {
+        color: darkgreen;
+    }
+
+    /* .container .card .content .team-sci a:hover {
+        color:blue;
+        transform: scale(1.1);
+    } */
+
+    .team-section {
+        margin-top: 20px;
+        margin-bottom: 150px;
+    }
+
+    /* ########################## card config end ############################ */
+
+    .box {
+        flex: 30%;
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        background-color: #f2f3f7;
+        color: #6c758f;
+        padding: 30px 30px;
+        border-radius: 20px;
+        /* justify-content: center; */
+    }
+
+    .box img {
+        border-radius: 50%;
+        border: 2px solid #FFF;
+        width: 180px;
+        height: 180px;
+    }
+
+    .box ul {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .box ul li {
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 100;
+    }
+
+    .box ul li i {
+        cursor: pointer;
+        margin: 10px;
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .box ul li i:hover {
+    opacity: 0.6;
+    }
+
+    /* .personal-content { */
+    #card2 {
+        margin-left: 20px;
+        flex: 80%;
+        display: table;
+        padding: 30px 30px;
+        font-size: 2px !important;
+        background-color: #417885;
+        border-radius: 20px;
+        color: aliceblue;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    /* .personal-content h1 { */
+    #card2 h1 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 30px !important;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    /* .personal-content ul li { */
+    #card2 ul li {
+        list-style: none;
+        margin-top: 5px;
+        font-weight: 30;
+    }
+
+    #card2 ul li i {
+        cursor: pointer;
+        margin: 10px;
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    /* .personal-content ul { */
+    #card2 ul {
+        text-align: left;
+        /* margin-top: 30px; */
+        font-size: 20px;
+        /* text-align: center; */
+    }
+
+    /* .card ul li {
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 50;
+    }
+
+    .card ul li i {
+        cursor: pointer;
+        margin: 10px;
+        margin-left: 0;
+        font-size: 30px;
+    } */
+
+    .noncolored-section {
+        margin: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        position: relative;
+    }
+
+    .noncolored-section .navbar {
+        width: 98%;
+        align-items: center;
+    }
+
+    .profile-section .container-fluid {
+        width: 95%;
+    }
+
+    .profile-section {
+        margin-bottom: 10%;
+    }
+
+    .column {
+        float: left;
+        padding: 0 100px;
+    }
+
+    /* p {
+    font-size: clamp(0.7rem, 1vw, 1.4rem);
+    }  */
+
+
+
+    /* .personal-content ul {
+        text-align: justify;
+    } */
+
+    @media (max-width: 990px) {
+
+        .noncolored-section {
+            margin: 0;
+        }
+
+        .box {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            left: 20px;
+        }
+
+        .card {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .personal-content {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            /* left: 20px; */
+            justify-content: center;
+            padding: auto;
+        }
+
+        .personal-content h1 {
+            text-align: center;
+        }
+
+        .column {
+            width: 100%;
+            display: flex;
+            margin-bottom: 60px;
+            /* float: left;
+            padding: 55%; */
+        }
+
+    }
+
+</style>
+
+<body>
+
+    <section class="noncolored-section title">
+
+        <!-- Nav Bar -->
+        <div class="container-fluid mx-0">
+
+            <nav class="navbar navbar-expand-lg navbar-light me-5">
+                <!-- <div class="container"> -->
+                <a class="navbar-brand" href="">
+                    <img id="logo" src="images/logo03.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_tgt"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_tgt">
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">R&D</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">International</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- </div> -->
+            </nav>
+        </div>
+    </section>
+
+
+    <br>
+
+    <!-- ######################################################################################### -->
+
+    <!-- Our Team -->
+    <section class="profile-section">
+        <div class="container-fluid">
+            <h2 class="profile-heading" style="text-align:center">Our Team</h2>
+            <div class="container team-container">
+                <div class="row">
+                    <div class="col-lg-4 column">
+                        <div class="card h-100">
+                            <div class="content">
+                                <div class="team-img-box" id="team-img-box">
+                                    <img src="images/eben-linkedin-pix02.png" alt="Eben" style="width:180px; height: 180px;">
+                                </div>
+                                <div class="team-content-box">
+                                    <ul>
+                                        <li>Ebenezer Okoh</li>
+                                        <li>IT Professional</li>
+                                        <li>CTO (PALM)</li>
+                                    <li><i class="fa-brands fa-facebook fa-lg"></i>
+                                        <i class="fa-brands fa-twitter fa-lg"></i>
+                                        <!-- <i class="fa-brands fa-instagram fa-lg"></i> -->
+                                        <i class="fa-brands fa-linkedin fa-lg"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 column">
+                        <!-- <div class="card"> -->
+                            <div class="personal-content card h-100 g-3" id="card2">
+                                <ul>
+                                    <h1>About</h1>
+                                </ul>
+                                <ul>
+                                    <h3>Work</h3>
+                                    <li>IT Professional</li>
+                                </ul>
+                                <ul>
+                                    <h3>Country</h3>
+                                    <li>Ghana</li>
+                                </ul>
+                                <ul>
+                                    <h3>More Info</h3>
+                                    <p>Ebenezer is an IT professional with interest in IT Security and Data Science, AI and 
+                                        Machine Learning.
+                                        <br>
+                                        <br>
+                                        Ebenezer has BSc. Computer Science from Kwame Nkrumah University of 
+                                        Science and Technology, Ghana and MSc. Information Security from Luleå 
+                                        University of Technology, Luleå - Sweden.
+                                    </p>
+                                </ul>
+                                <ul>
+                                    <h3>Contact</h3>
+                                    <li>ebenezer.okoh@palmsolutions.org</li>
+                                </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section class="colored-section footer cta mx-0">
+        <div class="container-fluid">
+            <h3 class="big-heading">AI tech to augment your agro farm is just a click away.</h3>
+            <button class="download-btn btn btn-lg btn-dark" type="button"><i class="fa-brands fa-apple"></i>
+                Download</button>
+            <button class="download-btn btn btn-lg btn-light" type="button"><i class="fa-brands fa-google-play"></i>
+                Download</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="white-section footer" id="home-footer">            
+        <div class="container-fluid">
+        <i class="social-icon fa-brands fa-facebook fa-xl"></i>
+        <i class="social-icon fa-brands fa-twitter fa-xl"></i>
+        <i class="social-icon fa-brands fa-instagram fa-xl"></i>
+        <i class="social-icon fa-solid fa-envelope fa-xl"></i>
+
+        <p class="copy-right">© Copyright PALM</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- ############################################################################################ -->
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
